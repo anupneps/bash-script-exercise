@@ -6,11 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
-    <h1>Javascript Workshop - 1</h1>
+    <h1 style="align-self: center;"> Javascript Workshop - 1 </h1>
     <hr>
+    <h2>
+        <script>
+            var x = window.prompt("Enter your age ?");
+            var order = 'Beer';
+
+            if (x > 50) {
+                document.write("He's over 50!");
+
+            } else if (x > 50 && x > 30) {
+                document.write("Middle aged man, who ordered some " + order);
+            } else
+                document.write("It seems you're bit underaged.");
+        </script>
+
+    </h2>
+    <hr>
+    <h1> <strong>Random number from 1 to 100</strong> </h1>
+    <script>
+        var arr = [];
+        for (var i = 0; i <
+            99; i++) {
+            arr.push(Math.floor((Math.random() * 100 + 1)));
+        }
+        document.write(arr);
+    </script>
+
+    <h2><strong>Functions walkthrough</strong></h2>
+    <script>
+        function areYouOldEnough(age) {
+            if (age < 18) {
+                return ("Your are not Old enough");
+            } else
+                return ("Your are Old enough");
+        }
+        document.write(areYouOldEnough(20));
+    </script>
+
+    <h2><strong>Practising Objects</strong></h2>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        document.write(person.lastName);
+    </script>
+
 </body>
 
 </html>
